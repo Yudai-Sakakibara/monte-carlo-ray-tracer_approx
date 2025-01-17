@@ -44,7 +44,6 @@ Camera::Camera(const nlohmann::json &j, const Option &option)
     edge_threshold = c.at("edge_threshold");
     edge_threshold /= 255.0; // added
     approx_prob = c.at("approx_prob"); // added
-    exec_mode = c.at("exec_mode"); // added
     savename = c.at("savename");
     aperture_radius = (focal_length / getOptional(c, "f_stop", -1.0)) / 2.0;
     focus_distance = getOptional(c, "focus_distance", -1.0);
@@ -141,7 +140,7 @@ void Camera::samplePixel_second(size_t x, size_t y, int i1, int i2)
         }
 
         if(no_edge[y * image.width + x]){
-            if(i > 1111){
+            if(rand01() >= approx_prob){
                 cnt_regular++;
                 film.deposit(px, integrator->sampleRay(ray));
                 cnt_all++;
@@ -157,7 +156,7 @@ void Camera::samplePixel_second(size_t x, size_t y, int i1, int i2)
             film.deposit(px, integrator->sampleRay(ray));
             cnt_all++;
         }
-        if(cnt_all % 32 == 0){
+        if(cnt_all % 2048 == 0){
             std::printf("RISCV Sim: %d samples finished\n", cnt_all);
         }
     }
@@ -194,40 +193,16 @@ void Camera::sampleImage()
     edge_detection(edge_threshold);
     calc_average_window();
 
-    // step3a. measure_cycle
-    if(exec_mode == "measure_cycle"){
-        asm volatile ("li a7, 0x10001\n\t" 
-            "ecall" 
-            :
-            :
-            : "a7");
-        for (size_t y = 0; y < image.height; y++)
+    // step3
+    for (size_t y = 0; y < image.height; y++)
+    {
+        for (size_t x = 0; x < image.width; x++)
         {
-            for (size_t x = 0; x < image.width; x++)
-            {
-                samplePixel_second(x, y, spp1, spp1 + 1);
-            }
-        }
-        std::printf("Regular routine: %d  Approx routine: %d\n\n", cnt_regular, cnt_approx);
-        asm volatile ("li a7, 0x10001\n\t" 
-            "ecall" 
-            :
-            :
-            : "a7");
-    }
-
-    // step3b. output_image
-    if(exec_mode == "output_image"){
-        for (size_t y = 0; y < image.height; y++)
-        {
-            for (size_t x = 0; x < image.width; x++)
-            {
-                samplePixel_second(x, y, spp1, spp1 + spp2);
-            }
+            samplePixel_second(x, y, spp1, spp1 + spp2);
         }
     }
 
-    // step4b
+    // step4
     for (int y = 0; y < image.height; y++)
     {
         for (int x = 0; x < image.width; x++)
@@ -252,21 +227,6 @@ void Camera::capture()
     std::printf("\n");
     std::printf("Samples per pixel: %lu + %lu\n\n", spp1, spp2);
     sampleImage();
-    if(exec_mode == "output_image"){
-        asm volatile ("li a7, 0x10001\n\t" 
-            "ecall" 
-            :
-            :
-            : "a7");
-    }
     saveImage();
-    std::printf("Regular routine: %d  Approx routine: %d\n\n", cnt_regular, cnt_approx);
-    if(exec_mode == "output_image"){
-        asm volatile ("li a7, 0x10001\n\t" 
-            "ecall" 
-            :
-            :
-            : "a7");
-    }
     std::printf("Regular routine: %d  Approx routine: %d\n\n", cnt_regular, cnt_approx);
 }

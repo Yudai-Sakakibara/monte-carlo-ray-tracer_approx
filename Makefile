@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named monte-carlo-ray-tracer
+# Target rules for targets named photon_mapping_output_figure
 
 # Build rule for target.
-monte-carlo-ray-tracer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monte-carlo-ray-tracer
-.PHONY : monte-carlo-ray-tracer
+photon_mapping_output_figure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 photon_mapping_output_figure
+.PHONY : photon_mapping_output_figure
 
 # fast build rule for target.
-monte-carlo-ray-tracer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/build
-.PHONY : monte-carlo-ray-tracer/fast
+photon_mapping_output_figure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/build
+.PHONY : photon_mapping_output_figure/fast
 
 source/bvh/bvh.o: source/bvh/bvh.cpp.o
 .PHONY : source/bvh/bvh.o
 
 # target to build an object file
 source/bvh/bvh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/bvh/bvh.cpp.o
 .PHONY : source/bvh/bvh.cpp.o
 
 source/bvh/bvh.i: source/bvh/bvh.cpp.i
@@ -142,7 +142,7 @@ source/bvh/bvh.i: source/bvh/bvh.cpp.i
 
 # target to preprocess a source file
 source/bvh/bvh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/bvh/bvh.cpp.i
 .PHONY : source/bvh/bvh.cpp.i
 
 source/bvh/bvh.s: source/bvh/bvh.cpp.s
@@ -150,7 +150,7 @@ source/bvh/bvh.s: source/bvh/bvh.cpp.s
 
 # target to generate assembly for a file
 source/bvh/bvh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/bvh/bvh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/bvh/bvh.cpp.s
 .PHONY : source/bvh/bvh.cpp.s
 
 source/camera/camera.o: source/camera/camera.cpp.o
@@ -158,7 +158,7 @@ source/camera/camera.o: source/camera/camera.cpp.o
 
 # target to build an object file
 source/camera/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/camera.cpp.o
 .PHONY : source/camera/camera.cpp.o
 
 source/camera/camera.i: source/camera/camera.cpp.i
@@ -166,7 +166,7 @@ source/camera/camera.i: source/camera/camera.cpp.i
 
 # target to preprocess a source file
 source/camera/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/camera.cpp.i
 .PHONY : source/camera/camera.cpp.i
 
 source/camera/camera.s: source/camera/camera.cpp.s
@@ -174,7 +174,7 @@ source/camera/camera.s: source/camera/camera.cpp.s
 
 # target to generate assembly for a file
 source/camera/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/camera.cpp.s
 .PHONY : source/camera/camera.cpp.s
 
 source/camera/film.o: source/camera/film.cpp.o
@@ -182,7 +182,7 @@ source/camera/film.o: source/camera/film.cpp.o
 
 # target to build an object file
 source/camera/film.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/film.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/film.cpp.o
 .PHONY : source/camera/film.cpp.o
 
 source/camera/film.i: source/camera/film.cpp.i
@@ -190,7 +190,7 @@ source/camera/film.i: source/camera/film.cpp.i
 
 # target to preprocess a source file
 source/camera/film.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/film.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/film.cpp.i
 .PHONY : source/camera/film.cpp.i
 
 source/camera/film.s: source/camera/film.cpp.s
@@ -198,7 +198,7 @@ source/camera/film.s: source/camera/film.cpp.s
 
 # target to generate assembly for a file
 source/camera/film.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/film.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/film.cpp.s
 .PHONY : source/camera/film.cpp.s
 
 source/camera/image.o: source/camera/image.cpp.o
@@ -206,7 +206,7 @@ source/camera/image.o: source/camera/image.cpp.o
 
 # target to build an object file
 source/camera/image.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/image.cpp.o
 .PHONY : source/camera/image.cpp.o
 
 source/camera/image.i: source/camera/image.cpp.i
@@ -214,7 +214,7 @@ source/camera/image.i: source/camera/image.cpp.i
 
 # target to preprocess a source file
 source/camera/image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/image.cpp.i
 .PHONY : source/camera/image.cpp.i
 
 source/camera/image.s: source/camera/image.cpp.s
@@ -222,7 +222,7 @@ source/camera/image.s: source/camera/image.cpp.s
 
 # target to generate assembly for a file
 source/camera/image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/image.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/image.cpp.s
 .PHONY : source/camera/image.cpp.s
 
 source/camera/pixel-operators.o: source/camera/pixel-operators.cpp.o
@@ -230,7 +230,7 @@ source/camera/pixel-operators.o: source/camera/pixel-operators.cpp.o
 
 # target to build an object file
 source/camera/pixel-operators.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/pixel-operators.cpp.o
 .PHONY : source/camera/pixel-operators.cpp.o
 
 source/camera/pixel-operators.i: source/camera/pixel-operators.cpp.i
@@ -238,7 +238,7 @@ source/camera/pixel-operators.i: source/camera/pixel-operators.cpp.i
 
 # target to preprocess a source file
 source/camera/pixel-operators.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/pixel-operators.cpp.i
 .PHONY : source/camera/pixel-operators.cpp.i
 
 source/camera/pixel-operators.s: source/camera/pixel-operators.cpp.s
@@ -246,7 +246,7 @@ source/camera/pixel-operators.s: source/camera/pixel-operators.cpp.s
 
 # target to generate assembly for a file
 source/camera/pixel-operators.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/camera/pixel-operators.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/camera/pixel-operators.cpp.s
 .PHONY : source/camera/pixel-operators.cpp.s
 
 source/common/bounding-box.o: source/common/bounding-box.cpp.o
@@ -254,7 +254,7 @@ source/common/bounding-box.o: source/common/bounding-box.cpp.o
 
 # target to build an object file
 source/common/bounding-box.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/bounding-box.cpp.o
 .PHONY : source/common/bounding-box.cpp.o
 
 source/common/bounding-box.i: source/common/bounding-box.cpp.i
@@ -262,7 +262,7 @@ source/common/bounding-box.i: source/common/bounding-box.cpp.i
 
 # target to preprocess a source file
 source/common/bounding-box.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/bounding-box.cpp.i
 .PHONY : source/common/bounding-box.cpp.i
 
 source/common/bounding-box.s: source/common/bounding-box.cpp.s
@@ -270,7 +270,7 @@ source/common/bounding-box.s: source/common/bounding-box.cpp.s
 
 # target to generate assembly for a file
 source/common/bounding-box.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/bounding-box.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/bounding-box.cpp.s
 .PHONY : source/common/bounding-box.cpp.s
 
 source/common/coordinate-system.o: source/common/coordinate-system.cpp.o
@@ -278,7 +278,7 @@ source/common/coordinate-system.o: source/common/coordinate-system.cpp.o
 
 # target to build an object file
 source/common/coordinate-system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/coordinate-system.cpp.o
 .PHONY : source/common/coordinate-system.cpp.o
 
 source/common/coordinate-system.i: source/common/coordinate-system.cpp.i
@@ -286,7 +286,7 @@ source/common/coordinate-system.i: source/common/coordinate-system.cpp.i
 
 # target to preprocess a source file
 source/common/coordinate-system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/coordinate-system.cpp.i
 .PHONY : source/common/coordinate-system.cpp.i
 
 source/common/coordinate-system.s: source/common/coordinate-system.cpp.s
@@ -294,7 +294,7 @@ source/common/coordinate-system.s: source/common/coordinate-system.cpp.s
 
 # target to generate assembly for a file
 source/common/coordinate-system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/coordinate-system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/coordinate-system.cpp.s
 .PHONY : source/common/coordinate-system.cpp.s
 
 source/common/histogram.o: source/common/histogram.cpp.o
@@ -302,7 +302,7 @@ source/common/histogram.o: source/common/histogram.cpp.o
 
 # target to build an object file
 source/common/histogram.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/histogram.cpp.o
 .PHONY : source/common/histogram.cpp.o
 
 source/common/histogram.i: source/common/histogram.cpp.i
@@ -310,7 +310,7 @@ source/common/histogram.i: source/common/histogram.cpp.i
 
 # target to preprocess a source file
 source/common/histogram.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/histogram.cpp.i
 .PHONY : source/common/histogram.cpp.i
 
 source/common/histogram.s: source/common/histogram.cpp.s
@@ -318,7 +318,7 @@ source/common/histogram.s: source/common/histogram.cpp.s
 
 # target to generate assembly for a file
 source/common/histogram.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/histogram.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/histogram.cpp.s
 .PHONY : source/common/histogram.cpp.s
 
 source/common/option.o: source/common/option.cpp.o
@@ -326,7 +326,7 @@ source/common/option.o: source/common/option.cpp.o
 
 # target to build an object file
 source/common/option.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/option.cpp.o
 .PHONY : source/common/option.cpp.o
 
 source/common/option.i: source/common/option.cpp.i
@@ -334,7 +334,7 @@ source/common/option.i: source/common/option.cpp.i
 
 # target to preprocess a source file
 source/common/option.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/option.cpp.i
 .PHONY : source/common/option.cpp.i
 
 source/common/option.s: source/common/option.cpp.s
@@ -342,7 +342,7 @@ source/common/option.s: source/common/option.cpp.s
 
 # target to generate assembly for a file
 source/common/option.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/option.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/option.cpp.s
 .PHONY : source/common/option.cpp.s
 
 source/common/util.o: source/common/util.cpp.o
@@ -350,7 +350,7 @@ source/common/util.o: source/common/util.cpp.o
 
 # target to build an object file
 source/common/util.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/util.cpp.o
 .PHONY : source/common/util.cpp.o
 
 source/common/util.i: source/common/util.cpp.i
@@ -358,7 +358,7 @@ source/common/util.i: source/common/util.cpp.i
 
 # target to preprocess a source file
 source/common/util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/util.cpp.i
 .PHONY : source/common/util.cpp.i
 
 source/common/util.s: source/common/util.cpp.s
@@ -366,7 +366,7 @@ source/common/util.s: source/common/util.cpp.s
 
 # target to generate assembly for a file
 source/common/util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/common/util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/common/util.cpp.s
 .PHONY : source/common/util.cpp.s
 
 source/edge_detection/edge_detection.o: source/edge_detection/edge_detection.cpp.o
@@ -374,7 +374,7 @@ source/edge_detection/edge_detection.o: source/edge_detection/edge_detection.cpp
 
 # target to build an object file
 source/edge_detection/edge_detection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/edge_detection/edge_detection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/edge_detection/edge_detection.cpp.o
 .PHONY : source/edge_detection/edge_detection.cpp.o
 
 source/edge_detection/edge_detection.i: source/edge_detection/edge_detection.cpp.i
@@ -382,7 +382,7 @@ source/edge_detection/edge_detection.i: source/edge_detection/edge_detection.cpp
 
 # target to preprocess a source file
 source/edge_detection/edge_detection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/edge_detection/edge_detection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/edge_detection/edge_detection.cpp.i
 .PHONY : source/edge_detection/edge_detection.cpp.i
 
 source/edge_detection/edge_detection.s: source/edge_detection/edge_detection.cpp.s
@@ -390,7 +390,7 @@ source/edge_detection/edge_detection.s: source/edge_detection/edge_detection.cpp
 
 # target to generate assembly for a file
 source/edge_detection/edge_detection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/edge_detection/edge_detection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/edge_detection/edge_detection.cpp.s
 .PHONY : source/edge_detection/edge_detection.cpp.s
 
 source/integrator/integrator.o: source/integrator/integrator.cpp.o
@@ -398,7 +398,7 @@ source/integrator/integrator.o: source/integrator/integrator.cpp.o
 
 # target to build an object file
 source/integrator/integrator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/integrator.cpp.o
 .PHONY : source/integrator/integrator.cpp.o
 
 source/integrator/integrator.i: source/integrator/integrator.cpp.i
@@ -406,7 +406,7 @@ source/integrator/integrator.i: source/integrator/integrator.cpp.i
 
 # target to preprocess a source file
 source/integrator/integrator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/integrator.cpp.i
 .PHONY : source/integrator/integrator.cpp.i
 
 source/integrator/integrator.s: source/integrator/integrator.cpp.s
@@ -414,7 +414,7 @@ source/integrator/integrator.s: source/integrator/integrator.cpp.s
 
 # target to generate assembly for a file
 source/integrator/integrator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/integrator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/integrator.cpp.s
 .PHONY : source/integrator/integrator.cpp.s
 
 source/integrator/path-tracer/path-tracer.o: source/integrator/path-tracer/path-tracer.cpp.o
@@ -422,7 +422,7 @@ source/integrator/path-tracer/path-tracer.o: source/integrator/path-tracer/path-
 
 # target to build an object file
 source/integrator/path-tracer/path-tracer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/path-tracer/path-tracer.cpp.o
 .PHONY : source/integrator/path-tracer/path-tracer.cpp.o
 
 source/integrator/path-tracer/path-tracer.i: source/integrator/path-tracer/path-tracer.cpp.i
@@ -430,7 +430,7 @@ source/integrator/path-tracer/path-tracer.i: source/integrator/path-tracer/path-
 
 # target to preprocess a source file
 source/integrator/path-tracer/path-tracer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/path-tracer/path-tracer.cpp.i
 .PHONY : source/integrator/path-tracer/path-tracer.cpp.i
 
 source/integrator/path-tracer/path-tracer.s: source/integrator/path-tracer/path-tracer.cpp.s
@@ -438,7 +438,7 @@ source/integrator/path-tracer/path-tracer.s: source/integrator/path-tracer/path-
 
 # target to generate assembly for a file
 source/integrator/path-tracer/path-tracer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/path-tracer/path-tracer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/path-tracer/path-tracer.cpp.s
 .PHONY : source/integrator/path-tracer/path-tracer.cpp.s
 
 source/integrator/photon-mapper/photon-mapper.o: source/integrator/photon-mapper/photon-mapper.cpp.o
@@ -446,7 +446,7 @@ source/integrator/photon-mapper/photon-mapper.o: source/integrator/photon-mapper
 
 # target to build an object file
 source/integrator/photon-mapper/photon-mapper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/photon-mapper/photon-mapper.cpp.o
 .PHONY : source/integrator/photon-mapper/photon-mapper.cpp.o
 
 source/integrator/photon-mapper/photon-mapper.i: source/integrator/photon-mapper/photon-mapper.cpp.i
@@ -454,7 +454,7 @@ source/integrator/photon-mapper/photon-mapper.i: source/integrator/photon-mapper
 
 # target to preprocess a source file
 source/integrator/photon-mapper/photon-mapper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/photon-mapper/photon-mapper.cpp.i
 .PHONY : source/integrator/photon-mapper/photon-mapper.cpp.i
 
 source/integrator/photon-mapper/photon-mapper.s: source/integrator/photon-mapper/photon-mapper.cpp.s
@@ -462,7 +462,7 @@ source/integrator/photon-mapper/photon-mapper.s: source/integrator/photon-mapper
 
 # target to generate assembly for a file
 source/integrator/photon-mapper/photon-mapper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/integrator/photon-mapper/photon-mapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/integrator/photon-mapper/photon-mapper.cpp.s
 .PHONY : source/integrator/photon-mapper/photon-mapper.cpp.s
 
 source/main.o: source/main.cpp.o
@@ -470,7 +470,7 @@ source/main.o: source/main.cpp.o
 
 # target to build an object file
 source/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/main.cpp.o
 .PHONY : source/main.cpp.o
 
 source/main.i: source/main.cpp.i
@@ -478,7 +478,7 @@ source/main.i: source/main.cpp.i
 
 # target to preprocess a source file
 source/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/main.cpp.i
 .PHONY : source/main.cpp.i
 
 source/main.s: source/main.cpp.s
@@ -486,7 +486,7 @@ source/main.s: source/main.cpp.s
 
 # target to generate assembly for a file
 source/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
 source/material/fresnel.o: source/material/fresnel.cpp.o
@@ -494,7 +494,7 @@ source/material/fresnel.o: source/material/fresnel.cpp.o
 
 # target to build an object file
 source/material/fresnel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/fresnel.cpp.o
 .PHONY : source/material/fresnel.cpp.o
 
 source/material/fresnel.i: source/material/fresnel.cpp.i
@@ -502,7 +502,7 @@ source/material/fresnel.i: source/material/fresnel.cpp.i
 
 # target to preprocess a source file
 source/material/fresnel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/fresnel.cpp.i
 .PHONY : source/material/fresnel.cpp.i
 
 source/material/fresnel.s: source/material/fresnel.cpp.s
@@ -510,7 +510,7 @@ source/material/fresnel.s: source/material/fresnel.cpp.s
 
 # target to generate assembly for a file
 source/material/fresnel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/fresnel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/fresnel.cpp.s
 .PHONY : source/material/fresnel.cpp.s
 
 source/material/ggx.o: source/material/ggx.cpp.o
@@ -518,7 +518,7 @@ source/material/ggx.o: source/material/ggx.cpp.o
 
 # target to build an object file
 source/material/ggx.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/ggx.cpp.o
 .PHONY : source/material/ggx.cpp.o
 
 source/material/ggx.i: source/material/ggx.cpp.i
@@ -526,7 +526,7 @@ source/material/ggx.i: source/material/ggx.cpp.i
 
 # target to preprocess a source file
 source/material/ggx.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/ggx.cpp.i
 .PHONY : source/material/ggx.cpp.i
 
 source/material/ggx.s: source/material/ggx.cpp.s
@@ -534,7 +534,7 @@ source/material/ggx.s: source/material/ggx.cpp.s
 
 # target to generate assembly for a file
 source/material/ggx.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/ggx.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/ggx.cpp.s
 .PHONY : source/material/ggx.cpp.s
 
 source/material/material.o: source/material/material.cpp.o
@@ -542,7 +542,7 @@ source/material/material.o: source/material/material.cpp.o
 
 # target to build an object file
 source/material/material.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/material.cpp.o
 .PHONY : source/material/material.cpp.o
 
 source/material/material.i: source/material/material.cpp.i
@@ -550,7 +550,7 @@ source/material/material.i: source/material/material.cpp.i
 
 # target to preprocess a source file
 source/material/material.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/material.cpp.i
 .PHONY : source/material/material.cpp.i
 
 source/material/material.s: source/material/material.cpp.s
@@ -558,7 +558,7 @@ source/material/material.s: source/material/material.cpp.s
 
 # target to generate assembly for a file
 source/material/material.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/material/material.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/material/material.cpp.s
 .PHONY : source/material/material.cpp.s
 
 source/ray/interaction.o: source/ray/interaction.cpp.o
@@ -566,7 +566,7 @@ source/ray/interaction.o: source/ray/interaction.cpp.o
 
 # target to build an object file
 source/ray/interaction.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/interaction.cpp.o
 .PHONY : source/ray/interaction.cpp.o
 
 source/ray/interaction.i: source/ray/interaction.cpp.i
@@ -574,7 +574,7 @@ source/ray/interaction.i: source/ray/interaction.cpp.i
 
 # target to preprocess a source file
 source/ray/interaction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/interaction.cpp.i
 .PHONY : source/ray/interaction.cpp.i
 
 source/ray/interaction.s: source/ray/interaction.cpp.s
@@ -582,7 +582,7 @@ source/ray/interaction.s: source/ray/interaction.cpp.s
 
 # target to generate assembly for a file
 source/ray/interaction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/interaction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/interaction.cpp.s
 .PHONY : source/ray/interaction.cpp.s
 
 source/ray/ray.o: source/ray/ray.cpp.o
@@ -590,7 +590,7 @@ source/ray/ray.o: source/ray/ray.cpp.o
 
 # target to build an object file
 source/ray/ray.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/ray.cpp.o
 .PHONY : source/ray/ray.cpp.o
 
 source/ray/ray.i: source/ray/ray.cpp.i
@@ -598,7 +598,7 @@ source/ray/ray.i: source/ray/ray.cpp.i
 
 # target to preprocess a source file
 source/ray/ray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/ray.cpp.i
 .PHONY : source/ray/ray.cpp.i
 
 source/ray/ray.s: source/ray/ray.cpp.s
@@ -606,7 +606,7 @@ source/ray/ray.s: source/ray/ray.cpp.s
 
 # target to generate assembly for a file
 source/ray/ray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/ray/ray.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/ray/ray.cpp.s
 .PHONY : source/ray/ray.cpp.s
 
 source/scene/scene.o: source/scene/scene.cpp.o
@@ -614,7 +614,7 @@ source/scene/scene.o: source/scene/scene.cpp.o
 
 # target to build an object file
 source/scene/scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/scene/scene.cpp.o
 .PHONY : source/scene/scene.cpp.o
 
 source/scene/scene.i: source/scene/scene.cpp.i
@@ -622,7 +622,7 @@ source/scene/scene.i: source/scene/scene.cpp.i
 
 # target to preprocess a source file
 source/scene/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/scene/scene.cpp.i
 .PHONY : source/scene/scene.cpp.i
 
 source/scene/scene.s: source/scene/scene.cpp.s
@@ -630,7 +630,7 @@ source/scene/scene.s: source/scene/scene.cpp.s
 
 # target to generate assembly for a file
 source/scene/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/scene/scene.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/scene/scene.cpp.s
 .PHONY : source/scene/scene.cpp.s
 
 source/surface/quadric.o: source/surface/quadric.cpp.o
@@ -638,7 +638,7 @@ source/surface/quadric.o: source/surface/quadric.cpp.o
 
 # target to build an object file
 source/surface/quadric.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/quadric.cpp.o
 .PHONY : source/surface/quadric.cpp.o
 
 source/surface/quadric.i: source/surface/quadric.cpp.i
@@ -646,7 +646,7 @@ source/surface/quadric.i: source/surface/quadric.cpp.i
 
 # target to preprocess a source file
 source/surface/quadric.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/quadric.cpp.i
 .PHONY : source/surface/quadric.cpp.i
 
 source/surface/quadric.s: source/surface/quadric.cpp.s
@@ -654,7 +654,7 @@ source/surface/quadric.s: source/surface/quadric.cpp.s
 
 # target to generate assembly for a file
 source/surface/quadric.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/quadric.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/quadric.cpp.s
 .PHONY : source/surface/quadric.cpp.s
 
 source/surface/sphere.o: source/surface/sphere.cpp.o
@@ -662,7 +662,7 @@ source/surface/sphere.o: source/surface/sphere.cpp.o
 
 # target to build an object file
 source/surface/sphere.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/sphere.cpp.o
 .PHONY : source/surface/sphere.cpp.o
 
 source/surface/sphere.i: source/surface/sphere.cpp.i
@@ -670,7 +670,7 @@ source/surface/sphere.i: source/surface/sphere.cpp.i
 
 # target to preprocess a source file
 source/surface/sphere.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/sphere.cpp.i
 .PHONY : source/surface/sphere.cpp.i
 
 source/surface/sphere.s: source/surface/sphere.cpp.s
@@ -678,7 +678,7 @@ source/surface/sphere.s: source/surface/sphere.cpp.s
 
 # target to generate assembly for a file
 source/surface/sphere.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/sphere.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/sphere.cpp.s
 .PHONY : source/surface/sphere.cpp.s
 
 source/surface/triangle.o: source/surface/triangle.cpp.o
@@ -686,7 +686,7 @@ source/surface/triangle.o: source/surface/triangle.cpp.o
 
 # target to build an object file
 source/surface/triangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/triangle.cpp.o
 .PHONY : source/surface/triangle.cpp.o
 
 source/surface/triangle.i: source/surface/triangle.cpp.i
@@ -694,7 +694,7 @@ source/surface/triangle.i: source/surface/triangle.cpp.i
 
 # target to preprocess a source file
 source/surface/triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/triangle.cpp.i
 .PHONY : source/surface/triangle.cpp.i
 
 source/surface/triangle.s: source/surface/triangle.cpp.s
@@ -702,7 +702,7 @@ source/surface/triangle.s: source/surface/triangle.cpp.s
 
 # target to generate assembly for a file
 source/surface/triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte-carlo-ray-tracer.dir/build.make CMakeFiles/monte-carlo-ray-tracer.dir/source/surface/triangle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/photon_mapping_output_figure.dir/build.make CMakeFiles/photon_mapping_output_figure.dir/source/surface/triangle.cpp.s
 .PHONY : source/surface/triangle.cpp.s
 
 # Help Target
@@ -713,7 +713,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... monte-carlo-ray-tracer"
+	@echo "... photon_mapping_output_figure"
 	@echo "... source/bvh/bvh.o"
 	@echo "... source/bvh/bvh.i"
 	@echo "... source/bvh/bvh.s"

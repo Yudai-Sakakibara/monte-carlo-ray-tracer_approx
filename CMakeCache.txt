@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=monte-carlo-ray-tracer
+CMAKE_PROJECT_NAME:STATIC=photon_mapping_output_figure
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -217,6 +217,15 @@ monte-carlo-ray-tracer_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 monte-carlo-ray-tracer_SOURCE_DIR:STATIC=/home/sakakibara/monte-carlo-ray-tracer_approx
+
+//Value Computed by CMake
+photon_mapping_output_figure_BINARY_DIR:STATIC=/home/sakakibara/monte-carlo-ray-tracer_approx
+
+//Value Computed by CMake
+photon_mapping_output_figure_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+photon_mapping_output_figure_SOURCE_DIR:STATIC=/home/sakakibara/monte-carlo-ray-tracer_approx
 
 
 ########################
