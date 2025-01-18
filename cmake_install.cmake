@@ -1,4 +1,4 @@
-# Install script for directory: /home/sakakibara/monte-carlo-ray-tracer_approx
+# Install script for directory: /home/sakakibara/photon_mapping_output_image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sakakibara/monte-carlo-ray-tracer_approx/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sakakibara/photon_mapping_output_image/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

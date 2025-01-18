@@ -1,4 +1,0 @@
-・maxdepth=6
-・使用param数2(Eのみ)
-・分割ブロックは8x8 or 1x1
-・1x1の場合、n_samples=8の場合、最初の4回はIS不使用（n_samples=32→16回）

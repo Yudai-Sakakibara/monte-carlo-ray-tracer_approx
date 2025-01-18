@@ -348,4 +348,4 @@ void Scene::generateVertexNormals(std::vector<glm::dvec3> &normals,
     }
 }
 
-std::string Scene::path = "/home/sakakibara/monte-carlo-ray-tracer_approx/scenes";
+std::string Scene::path = "/home/sakakibara/photon_mapping_output_image/scenes";

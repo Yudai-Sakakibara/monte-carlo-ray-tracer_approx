@@ -13,7 +13,6 @@
       "spp2": 0,
       "approx_prob": 0.5,
       "edge_threshold": 64,
-      "exec_mode": "none",
       "savename": "diamond14"
     }
   ],
@@ -42,6 +41,7 @@
     },
     "diamond": {
       "transparency": 1.0,
+      "transmittance": 1.0,
       "ior": 2.4
     },
     "light": {

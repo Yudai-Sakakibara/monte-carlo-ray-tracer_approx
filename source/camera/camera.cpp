@@ -104,7 +104,7 @@ void Camera::samplePixel_first(size_t x, size_t y)
         cnt_regular++;
         film.deposit(px, integrator->sampleRay(ray));
         cnt_all++;
-        if(cnt_all % 32 == 0){
+        if(cnt_all % 2048 == 0){
             std::printf("RISCV Sim: %d samples finished\n", cnt_all);
         }
     }

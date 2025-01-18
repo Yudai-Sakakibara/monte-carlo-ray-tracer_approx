@@ -1,1 +1,0 @@
-clang-10: warning: -l/home/sakakibara/opt3/riscv64-unknown-elf/include/c++/14.2.0/riscv64-unknown-elf/bits/stdc++.h: 'linker' input unused [-Wunused-command-line-argument]

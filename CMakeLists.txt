@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(photon_mapping_output_figure)
+project(photon_mapping_output_image)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "-static") # added
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)

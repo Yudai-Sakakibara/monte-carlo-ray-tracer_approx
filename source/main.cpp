@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[])
 {
-    Scene::path = "/home/sakakibara/monte-carlo-ray-tracer_approx/scenes";
+    Scene::path = "/home/sakakibara/photon_mapping_output_image/scenes";
     std::printf("Scene directory:\n");
     std::printf("%s\n", Scene::path.c_str());
 

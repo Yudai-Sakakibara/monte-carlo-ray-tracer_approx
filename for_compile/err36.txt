@@ -1,2 +1,0 @@
-/home/sakakibara/opt7/lib/gcc/riscv64-unknown-elf/14.2.0/../../../../riscv64-unknown-elf/bin/ld: cannot find -lstdc++fs: No such file or directory
-collect2: error: ld returned 1 exit status
