@@ -13,7 +13,7 @@
       "spp2": 16,
       "edge_threshold": 16,
       "approx_prob": 1.0000,
-      "savename": "figures3/wc/wc_16"
+      "savename": "figures/wc/wc_16"
     }
   ],
 
