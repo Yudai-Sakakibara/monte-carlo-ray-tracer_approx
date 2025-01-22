@@ -3,7 +3,7 @@
   "ior": 1.75,
 
   "photon_map": {
-    "emissions": 2e4,
+    "emissions": 5e4,
     "caustic_factor": 10.0,
     "k_nearest_photons": 10,
     "max_photons_per_octree_leaf": 200,
@@ -17,15 +17,15 @@
       "eye": [ -2, 0, 0 ],
       "look_at": [ 13, -0.55, 0 ],
       "image" : { 
-        "width": 128,
-        "height": 96,
+        "width": 256,
+        "height": 192,
         "exposure_compensation": -0.25
       },
-      "spp1": 4096,
-      "spp2": 0,
+      "spp1": 16,
+      "spp2": 16,
       "edge_threshold": 16,
-      "approx_prob": 1.0000,
-      "savename": "figures3/c1b/c1b_ref"
+      "approx_prob": 0.2500,
+      "savename": "figures3/c1b/c1b_04"
     }
   ],
 
